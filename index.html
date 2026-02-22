@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ApexQuant Investments | Institutional Quant</title>
+    <style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            margin: 0;
+            color: #0b0e0f;
+            line-height: 1.6;
+            background-color: #fdfdfd;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+         align-items: center;
+            padding: 20px 8%;
+            border-bottom: 1px solid #dfe6e9;
+        }
+
+        .company-name {
+            font-weight: bold; 
+            font-size: 1.4rem;
+            color: #538997;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #636e72;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        nav a:hover { color: #516574; }
+
+        .hero {
+            text-align: center;
+           padding: 120px 20px;
+            background-color: #6c7f92;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #1e272e;
+        }
+
+        .services {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+          margin-top: 50px;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+        padding: 40px 25px;
+            border: 1px solid #dfe6e9;
+            border-radius: 4px;
+            background: rgb(252, 252, 252);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #0984e3;
+        }
+
+        .contact-area {
+            background-color: #0f1111;
+           color: rgb(243, 242, 242);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 450px;
+            margin: 30px auto 0;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        label { color: #2d3436; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+        
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 20px 0;
+            border: 1px solid #dfe6e9;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #confirmation {
+            display: none;
+            color: #55efc4;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1e272e;
+            color: #b2bec3;
+            text-align: center;
+            padding: 40px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="company-name">ApexQuant Investments</div>
+        <nav>
+            <a href="-">Home</a>
+            <a href="#services">Investment Strategies</a>
+            <a href="#">Portfolio Insights</a>
+            <a href="#">Research</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>“Driven by Data. Powered by Precision. Investing in the Future.”</h1>
+    </div>
+
+    <div class="services" id="services">
+        <h2 style="font-size: 1.8rem;">Core Investment Pillars</h2>
+        <div class="grid">
+            <div class="card">
+                <div style="font-size: 2rem; margin-bottom: 10px;">📈</div>
+             <h3>Quantitative Asset Management</h3>
+                <p>Systematic strategies driven by statistical modeling and data-led precision.</p>
+            </div>
+            <div class="card">
+             <div style="font-size: 2rem; margin-bottom: 10px;">🚀</div>
+                <h3>Venture Capital & Growth Funding</h3>
+                <p>Strategic capital for high-growth enterprises and disruptive technologies.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 2rem; margin-bottom: 10px;">💻</div>
+                <h3>Financial Technology Solutions</h3>
+              <p>Developing the computational infrastructure for modern financial markets.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 2rem; margin-bottom: 10px;">🛡️</div>
+             <h3>Risk Analytics & Portfolio Optimization</h3>
+                <p>Institutional-grade risk modeling to ensure long-term capital stability.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-area" id="contact">
+        <h2>Investor Inquiry</h2>
+        <div class="contact-form">
+            <form id="qForm">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="email@address.com" required>
+
+             <label>Investment Interest Type</label>
+                <select id="type" required>
+                    <option value="">-- Please Select --</option>
+                   <option value="Institutional">Institutional</option>
+                    <option value="Private Equity">Private Equity</option>
+                    <option value="Venture">Venture</option>
+                   <option value="Other">Other</option>
+                </select>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+            <div id="confirmation">
+                “Thank you for contacting ApexQuant Investments. Our team will review your inquiry shortly.”
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>ApexQuant Investments</strong></p>
+        <p>Current Year: 2026</p>
+        <p>&copy; Copyright notice showing this is the official website of ApexQuant Investments</p>
+    </footer>
+
+    <script>
+        document.getElementById('qForm').onsubmit = function(e) {
+            e.preventDefault();
+            document.getElementById('qForm').style.display = 'none';
+            document.getElementById('confirmation').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
